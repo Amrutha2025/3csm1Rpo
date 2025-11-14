@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Basic Page</title>
+  <style>
+    /* tiny, friendly styles */
+    body { font-family: system-ui, -apple-system, Arial, sans-serif; line-height: 1.5; margin: 0; padding: 0; }
+    header, footer { background:#f4f4f4; padding: 1rem; text-align:center; }
+    main { padding: 1.25rem; max-width: 900px; margin: 0 auto; }
+    .card { border: 1px solid #e0e0e0; padding: 1rem; border-radius: 8px; background: #fff; }
+    a { color: #0366d6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Page</h1>
+    <p>Simple HTML starter template</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>About this page</h2>
+      <p>This is a minimal, valid HTML5 page you can use as a starting point.</p>
+      <ul>
+        <li>Save as <code>index.html</code></li>
+        <li>Open in browser to preview</li>
+      </ul>
+    </section>
+
+    <section style="margin-top:1rem;" class="card">
+      <h2>Small interactive example</h2>
+      <p>Click the button to show an alert:</p>
+      <button id="helloBtn">Say Hello</button>
+      <p id="msg" style="margin-top:.5rem;"></p>
+    </section>
+  </main>
+
+  <footer>
+    <small>Made with ❤️ — basic template</small>
+  </footer>
+
+  <script>
+    // tiny JS: wire the button
+    document.getElementById('helloBtn').addEventListener('click', function () {
+      const p = document.getElementById('msg');
+      p.textContent = 'Hello — this page is working!';
+      alert('Hello — this page is working!');
+    });
+  </script>
+</body>
+</html>
